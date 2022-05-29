@@ -26,48 +26,6 @@ virtual_map = [[0] * 500 for i in range(500)]
 
 pixcel = pygame.image.load("map2.PNG")
 
-# for i in range(0, 500):
-
-#     for j in range(0, 500):
-
-#         if (pixcel.get_at((j, i))==(255, 255, 255)):
-
-#             virtual_map[i][j] = True
-
-#         else:
-
-#             virtual_map[i][j] = False
-
-
-
-# for i in range(0, 500):
-
-#     for j in range(0, 500):
-
-#         if (pixcel.get_at((j, i))==(0, 0, 255)):
-
-#             m = j
-#             n = i
-
-
-# start_position = Position(20, 15)
-
-
-# for i in range(0, 500):
-
-#     for j in range(0, 500):
-
-#         if (pixcel.get_at((j, i))==(0, 255 , 0)):
-
-#             m = i
-#             n = j
-# dest_position = Position(m, n)
-
-# t= 480
-# u= 480
-# dest_position = Position(t, u)
-# print(dest_position.top)
-# print(dest_position.left)
 for i in range(0, 500):
 
     for j in range(0, 500):
