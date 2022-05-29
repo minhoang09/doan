@@ -59,16 +59,9 @@ dest_position = Position(480,480)
 
 
 distance=[1, 1, 1, 1]
-# distance=[3, 5, 3, 5, 3, 5, 3, 5]
 list_wait = []
 
 next_node = [Position(0, -1), Position(1, 0), Position(0, 1), Position(-1, 0)]
-# next_node = [Position(0, -3), Position(3, -3), Position(3, 0), Position(3, 3), 
-
-#     Position(0, 3), Position(-3, 3), Position(-3, 0), Position(-3, -3)]
-
-
-
 
 
 nodes = [[0] * 500 for i in range(500)]
@@ -90,9 +83,6 @@ pygame.draw.circle(win, (255,0,0), (start_position.top, start_position.left), 5)
 pygame.draw.circle(win, (0,255,0), (dest_position.top, dest_position.left), 5)
 
 pygame.display.update()
-
-
-
 
 
 
@@ -160,8 +150,6 @@ def is_in_list_wait(position):
 def heuristic (left, top):
 
     return math.sqrt((left-dest_position.left)*(left-dest_position.left)+(top-dest_position.top)*(top-dest_position.top))
-
-
 
 
 
@@ -236,10 +224,6 @@ def a_star ():
                         nodes[tmp_top][tmp_left].f = tmp_f
 
                    
-
-
-
-
 
 
 
